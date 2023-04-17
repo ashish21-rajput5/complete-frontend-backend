@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+    .container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .box {
+        border: 1.5px black solid;
+    }
+    
+    #heading {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    
+    #right {
+        font-size: 20px;
+    }
+    /*
+        Desktop above 1024px
+        Tablets 769px to 1023px
+        SmartPhones 469px to 768px
+        Small Phones 0px to 468px
+    */
+    /*------ Desktop/Laptops ------*/
+    
+    @media(min-width: 1024px) {
+        body {
+            background-color: yellow;
+        }
+    }
+    /*------ tablets ------*/
+    
+    @media (min-width:769px) and (max-width: 1023px) {
+        body {
+            background-color: green;
+        }
+    }
+    /*------ SmarePhones ------*/
+    
+    @media (max-width: 768px) {
+        body {
+            background-color: red;
+        }
+        .container {
+            display: block;
+        }
+        #left img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    /*------ Small Phones ------*/
+    
+    @media (max-width:468px) {
+        body {
+            background-color: aquamarine;
+        }
+        .box {
+            border: none;
+        }
+        #left img {
+            display: none;
+        }
+        #right p {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="heading">
+            <h2>Indian Premier League</h2>
+        </div>
+        <div class="box" id="left">
+            <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/01/11/1004545-bcci-ipl.jpg">
+        </div>
+
+        <div class="box" id="right">
+            <p>
+                The Indian Cricket League (ICL) was founded in 2007, with funding provided by Zee Entertainment Enterprises.[10] The ICL was not recognised by the Board of Control for Cricket in India (BCCI) or the International Cricket Council (ICC) and the BCCI were
+                not pleased with its committee members joining the ICL executive board. To prevent players from joining the ICL, the BCCI increased the prize money in their own domestic tournaments and also imposed lifetime bans on players joining the
+                ICL, which was considered a rebel league by the board.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

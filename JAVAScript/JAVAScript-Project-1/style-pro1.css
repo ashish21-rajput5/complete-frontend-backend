@@ -1,0 +1,45 @@
+:root {
+    --color-hue: 218;
+    --color-primary: hsl(var(--color-hue), 50%, 50%);
+    --color-primary-light: hsl(var(--color-hue), 50%, 60%);
+    /* rgb (for red 0 to 255, for green 0 to 255, for blue 0 to 255) */
+    /* #------   >>>>>>   -- red 00 to ff , -- green 00 to ff, -- blue 00 to ff   */
+    /* hsl  >>>>  h -- hue(color 0' to 360') ,  s -- saturation(purity), l -- light(darkness) */
+    --color-body: hsl(var(--color-hue), 50%, 95%);
+    --color-text: hsl(var(--color-hue), 20%, 20%);
+}
+
+.dark-mode {
+    --color-primary: hsl(var(--color-hue), 50%, 50%);
+    --color-primary-light: hsl(var(--color-hue), 50%, 60%);
+    --color-body: hsl(var(--color-hue), 50%, 10%);
+    --color-text: hsl(var(--color-hue), 20%, 90%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-body);
+}
+
+h2 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-text);
+}
+
+.toggle-theme {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    background: var(--color-primary);
+    color: #fff;
+    transition: 0.3s background;
+}
+
+.toggle-theme:hover {
+    background: var(--color-primary-light);
+}

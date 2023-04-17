@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+
+    <!--Forms-->
+    <!--
+        1. Input & lebel
+        2. Textarea
+        3. Select
+        4. Datalist
+        5. Fieldset and Legerd
+    -->
+
+    <form>
+        <label><h1>Intro:</h1></label> <br>
+        <textarea rows="10" cols="10"></textarea> <br> <!--It is used for larger intro area like 100 or 1000 line-->
+    
+        <label>Year:</label> <br>
+        <select> <!--Size show two options at a time--> 
+            <!--if we use multiple in place of size it shows multiple options-->
+            
+            <optgroup>
+                <option>First Year</option>
+                <option>Second Year</option>
+            </optgroup>
+
+            <optgroup>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+            </optgroup>
+
+        </select>
+
+        <br><br> <br>
+        <label>SmartPhones</label> <br>
+        <input list="Phone" name="">
+        <datalist id="Phone">
+            <option value="Redmi Note 10S">Redmi Note 10S</option>
+            <option value="OnePlus 10R">OnePlus 10R</option>
+            <option value="Iphone 13 pro">Iphone 13 pro</option><br> <br> 
+        </datalist>
+
+        <fieldset>
+            <legend>Education Info</legend>
+            <label>10th Marks</label><br>
+            <input type="10th marks" name=""><br>
+            <label>12th marks</label><br>
+            <input type="12th marks" name=""><br>
+            <label>B.tech 1st year marks</label><br>
+            <input type="B.tech 1st year marks" name=""><br>
+        </fieldset>
+    
+    </form>
+
+</body>
+</html>

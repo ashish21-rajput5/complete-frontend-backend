@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document 2</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: black;
+    }
+    
+    .box {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: roll;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes roll {
+        0% {
+            background-color: orange;
+            top: 0px;
+            left: 0px;
+        }
+        25% {
+            background-color: blue;
+            top: 0px;
+            left: 50%;
+            border-radius: 50%;
+        }
+        50% {
+            background-color: aqua;
+            top: 200px;
+            left: 50%;
+            border-radius: 50%;
+        }
+        100% {
+            background-color: greenyellow;
+            top: 200px;
+            left: 94%;
+        }
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

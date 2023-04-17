@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Styling Tables</title>
+</head>
+
+<style type="text/css">
+    #container {
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'verdana';
+    }
+    
+    table,
+    tr,
+    th,
+    td {
+        border: 2px #aaa solid;
+    }
+    
+    th {
+        background-color: #00a65a;
+        color: white;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    tr {
+        height: 40px;
+    }
+    
+    tr:hover {
+        background-color: #eee;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #55efc4;
+    }
+    
+    td {
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center;">Table CSS Example</h1>
+
+    <div id="container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Collage</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+
+            <tr>
+                <td>Rahul Kumar</td>
+                <td>Techno India</td>
+                <td>EEE</td>
+                <td>7.9</td>
+            </tr>
+
+            <tr>
+                <td>Mukesh Kumar</td>
+                <td>IEM Salt Lake</td>
+                <td>ECE</td>
+                <td>8.1</td>
+            </tr>
+
+            <tr>
+                <td>Vivek Kumar</td>
+                <td>BP Poddar</td>
+                <td>CSE</td>
+                <td>8.5</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

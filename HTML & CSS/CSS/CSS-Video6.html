@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Combinators & Pseudo Selectors</title>
+</head>
+<style type="text/css">
+    /*this arrow(>) in next line for only highlite direct written div span*/
+    /*this arrow(~) in next line for only highlite direct written shivling span*/
+    /*this arrow(+) in next line for only highlite direct written shivling span  first only*/
+    
+    div+span {
+        background-color: aqua;
+    }
+    
+    a[target=_blank] {
+        background-color: red;
+    }
+    
+    input[type=email] {
+        width: 100%;
+    }
+    
+    li:nth-child(6) {
+        background-color: blueviolet;
+    }
+    
+    li::selection {
+        background-color: lightgreen;
+        color: red;
+    }
+</style>
+
+<body>
+    <div>
+        <p><span>Hello World</span></p>
+        <span>Hello World</span>
+    </div>
+    <span>Hello World</span>
+    <span>Hello World</span>
+
+    <br><br>
+    <a href="#" target="_blank">First link</a>
+    <a href="#" target="_self">Second link</a>
+    <a href="#">Third link</a>
+
+    <input type="text" name="">
+    <input type="email" name="">
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+        <li>Item 11</li>
+        <li>Item 12</li>
+        <li>Item 13</li>
+        <li>Item 14</li>
+        <li>Item 15</li>
+        <li>Item 16</li>
+        <li>Item 17</li>
+        <li>Item 18</li>
+    </ul>
+
+</body>
+
+</html>

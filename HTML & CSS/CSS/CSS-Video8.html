@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Position Demo</title>
+</head>
+<style class="text/css">
+    body {
+        height: 3000px;
+    }
+    
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #card1 {
+        position: fixed;
+        top: 50px;
+        left: 100px;
+        background-color: green;
+    }
+    
+    #card2 {
+        position: absolute;
+        top: 20px;
+        background-color: red;
+    }
+    
+    #card3 {
+        background-color: yellow;
+    }
+    
+    #card4 {
+        background-color: blue;
+        position: sticky;
+        top: 100px;
+    }
+    
+    #container {
+        position: relative;
+        border: 2px black solid;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <div class="card" id="card1"></div>
+    <div id="container">
+        <div class="card" id="card2"></div>
+    </div>
+    <div class="card" id="card3"></div>
+    <div class="card" id="card4"></div>
+</body>
+
+</html>
+
+<!-- if any positioning is static then we can't use 4 css properties top down left right-->

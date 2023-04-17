@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layouts</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #nav {
+        background-color: red;
+        height: 50px;
+    }
+    
+    #nav h2 {
+        padding: 9px;
+        color: white;
+        font-size: 30px;
+    }
+    
+    #cover {
+        height: 400px;
+        background-image: url('https://th.bing.com/th/id/OIP.qILtE96DLrI1Z0xohjXL3wHaEK?pid=ImgDet&rs=1');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #cover h1 {
+        padding: 180px 0px;
+        text-align: center;
+        color: azure;
+        font-size: 50px;
+        text-decoration: overline underline;
+    }
+    
+    #container {
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    #container h1 {
+        margin-top: 20px;
+    }
+    
+    .Dish {
+        border: 1px red solid;
+        width: 22%;
+        float: left;
+        margin-top: 30px;
+        background-color: rgb(236, 235, 235);
+        margin-left: 10px;
+        padding-top: 15px;
+    }
+</style>
+
+<body>
+
+    <div id="nav">
+        <h2>Zomato</h2>
+    </div>
+
+    <div id="cover">
+        <h1>Domino's Pizza</h1>
+    </div>
+
+    <div id="container">
+        <h1>Veg & Non-veg Pizza</h1>
+
+        <div class="Dish">
+            <h2>Pizza #1</h2>
+            <p>It is a delicious pizza.</p>
+        </div>
+
+        <div class="Dish">
+            <h2>Pizza #2</h2>
+            <p>It is a delicious pizza.</p>
+        </div>
+
+        <div class="Dish">
+            <h2>Pizza #3</h2>
+            <p>It is a delicious pizza.</p>
+        </div>
+
+        <div class="Dish">
+            <h2>Pizza #4</h2>
+            <p>It is a delicious pizza.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!--   Remember the difference between Class and ID: A Class name can be used by multiple HTML elements,
+     while an ID name must only be used by one HTML element within the page   -->
+<!-- https://picserio.com/data/out/120/fast-food-wallpaper_3399300.jpg -->
+<!--  float is used for arrange containers  horizential-inline   -->

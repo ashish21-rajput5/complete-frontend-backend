@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Animation</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: #333;
+    }
+    
+    .box {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        animation-name: Myanimation;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        /*animation-iteration-count: infinite;
+        animation-direction: alternate; 
+        animation-direction: ease-in-out; */
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes Myanimation {
+        from {
+            background-color: red;
+        }
+        to {
+            background-color: green;
+            width: 400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+
+        <!--
+            1. animation-name-and-duration
+            2. animation-delay
+            3. animation-interation-count
+            4. animation-direction
+            5. animation-timing-finction
+            6. animation-fill-mode
+        -->
+
+    </div>
+</body>
+
+</html>
+
+
+<!--   Remember the difference between Class and ID: A Class name can be used by
+     multiple HTML elements, while an ID name must only be used by one HTML 
+     element within the page  -->

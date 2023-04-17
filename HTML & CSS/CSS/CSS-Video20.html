@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Transformaions</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: black;
+    }
+    
+    .box {
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        top: 300px;
+        left: 45%;
+        position: relative;
+        /*transform: rotate(45deg);*/
+        /*transform: skew(20deg);*/
+        /*transform: Scale(1, 2);*/
+        /*transform: Translate(-100px, 200px);*/
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    
+    .box:hover {
+        background-color: blueviolet;
+        transform: Scale(2);
+    }
+</style>
+
+<body>
+    <div class="box">
+        <!--  
+            1. Rotate
+            2. Scale
+            3. Skew
+            4. Translate
+        -->
+    </div>
+
+</body>
+
+</html>
+
+<!--  hover means when we move our curser on block or anything it will react  -->

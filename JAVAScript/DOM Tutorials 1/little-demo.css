@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem 2rem;
+    background-color: aqua;
+    color: burlywood;
+    border-radius: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+}
